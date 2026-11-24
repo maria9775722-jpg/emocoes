@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Meu Termômetro das Emoções</title>
+
+<style>
+body {
+  background-color: #fff0f5;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  color: purple;
+}
+
+.caixa {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+button {
+  padding: 12px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#mensagem {
+  color: #8e44ad;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌈 Termômetro das Emoções</h1>
+
+<div class="caixa">
+<h2>Como você está se sentindo hoje?</h2>
+
+<button style="background:#ff5252"
+onclick="mostrar('Respire fundo e procure manter a calma!')">
+❤️ Raiva
+</button>
+
+<button style="background:#ffb347"
+onclick="mostrar('Respire devagar e faça algo relaxante!')">
+🧡 Ansiedade
+</button>
+
+<button style="background:#ffe066"
+onclick="mostrar('Compartilhe sua alegria!')">
+💛 Alegria
+</button>
+
+<button style="background:#65b9ff"
+onclick="mostrar('Converse com alguém de confiança!')">
+💙 Tristeza
+</button>
+
+<button style="background:#70d67b"
+onclick="mostrar('Continue cultivando sua paz!')">
+💚 Calma
+</button>
+
+<p id="mensagem">Escolha uma emoção!</p>
+</div>
+
+<div class="caixa">
+<h2>🌻 Dicas para viver bem</h2>
+<p>❤️ Cuide da sua saúde.</p>
+<p>🌷 Alimente-se bem.</p>
+<p>😊 Pratique atividades físicas.</p>
+<p>💚 Respeite seus sentimentos.</p>
+<p>🌈 Espalhe amor e gentileza!</p>
+</div>
+
+<h2>✨ Sua felicidade importa!</h2>
+
+<script>
+function mostrar(texto) {
+  document.getElementById("mensagem").innerHTML = texto;
+}
+</script>
+
+</body>
+</html>
